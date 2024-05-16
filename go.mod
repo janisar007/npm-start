@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/npm-start
+module github.com/initializ-buildpacks/npm-start
 
 go 1.19
 

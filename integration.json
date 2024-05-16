@@ -1,10 +1,10 @@
 {
   "builders": [
-    "paketocommunity/builder-ubi-buildpackless-base",
+    "initializbuildpacks/securepacks-initzbuilder",
     "paketobuildpacks/builder-jammy-buildpackless-base"
   ],
   "ubi-nodejs-extension": "github.com/paketo-community/ubi-nodejs-extension",
   "node-engine": "github.com/paketo-buildpacks/node-engine",
   "npm-install": "github.com/paketo-buildpacks/npm-install",
-  "watchexec": "index.docker.io/paketobuildpacks/watchexec"
+  "watchexec": "index.docker.io/initializbuildpacks/watchexec"
 }

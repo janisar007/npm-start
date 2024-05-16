@@ -1,13 +1,13 @@
 api = "0.7"
 
 [buildpack]
-  homepage = "https://github.com/paketo-buildpacks/npm-start"
-  id = "paketo-buildpacks/npm-start"
-  name = "Paketo Buildpack for NPM Start"
+  homepage = "https://github.com/initializ-buildpacks/npm-start"
+  id = "initializ-buildpacks/npm-start"
+  name = "Initializ Buildpack for NPM Start"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
-    uri = "https://github.com/paketo-buildpacks/npm-start/blob/main/LICENSE"
+    uri = "https://github.com/initializ-buildpacks/npm-start/blob/main/LICENSE"
 
 [metadata]
   include-files = ["bin/run", "bin/build", "bin/detect", "buildpack.toml"]

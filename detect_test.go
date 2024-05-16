@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	npmstart "github.com/paketo-buildpacks/npm-start"
-	"github.com/paketo-buildpacks/npm-start/fakes"
+	npmstart "github.com/initializ-buildpacks/npm-start"
+	"github.com/initializ-buildpacks/npm-start/fakes"
 	"github.com/paketo-buildpacks/packit/v2"
 	"github.com/sclevine/spec"
 
