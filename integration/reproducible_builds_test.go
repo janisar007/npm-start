@@ -33,6 +33,7 @@ func testReproducibleBuilds(t *testing.T, context spec.G, it spec.S) {
 	context("when rebuilding an image with pack", func() {
 		var (
 			image occam.Image
+			image2 occam.Image
 
 			name   string
 			source string
