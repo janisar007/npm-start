@@ -33,8 +33,6 @@ func testReproducibleBuilds(t *testing.T, context spec.G, it spec.S) {
 	context("when rebuilding an image with pack", func() {
 		var (
 			image occam.Image
-			image2 occam.Image
-
 			name   string
 			source string
 		)
@@ -76,13 +74,11 @@ func testReproducibleBuilds(t *testing.T, context spec.G, it spec.S) {
 			Expect(docker.Image.Remove.Execute(image.ID)).To(Succeed())
 			Expect(docker.Volume.Remove.Execute(occam.CacheVolumeNames(name))).To(Succeed())
 
-			// image, _, err = build.Execute(name, source)
-			// Expect(err).NotTo(HaveOccurred())
-
-			image2, _, err = build.Execute(name, source)
+			image, _, err = build.Execute(name, source)
 			Expect(err).NotTo(HaveOccurred())
 
-			Expect(image2.ID).To(Equal(firstID))
+
+			Expect(image.ID).To(Equal(firstID))
 		})
 	})
 }
